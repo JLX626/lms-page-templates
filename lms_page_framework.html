@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LMS Page framework example</title>
+    <style>
+        .layout-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100vh;
+            min-width: 1280px;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header-container {
+            display: flex;
+            background-image: url('http://via.placeholder.com/1280x300');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 300px;
+            width: 100%;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100%;
+            padding-top: 20px;
+            padding-left: 30px;
+            box-sizing: border-box; /* fix problem with box overrunning the boundaries of it's parent because of the use of padding */
+        }
+
+        .smart-square-section {
+            background-color: rgb(41, 99, 150);
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .smart-square-topic {
+            background-color: rgb(139, 176, 247);
+            padding: 20px;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .grid-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            flex-basis: 350px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-container">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="smart-square-section">Header Item 1</div>
+                <div class="smart-square-topic">Header Item 2</div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
